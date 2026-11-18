@@ -1,0 +1,102 @@
+# https://coolors.co/173b5e-286a91-78afc4-d96b35-f0a66b-f5efe5
+
+color:
+  palette:
+    dark_blue : "#173b5e"
+    blue : "#286a91"
+    light_blue : "#78afc4"
+    orange : "#d96b35"
+    light_orange : "#F0A66B"
+    beige : "#f5efe5"
+    background: "#FAF7F2"
+    dark_grey : "#4A5865"
+
+    navy: "#1b365d"
+    teal: "#78AFC4"
+    amber: "#ffbf00"
+    bright_red: "#DD4A22"
+    bright_orange: "#F5A05A"
+    bright_yellow : "#FFD380"
+    bright_green : "#A4E5C0"
+    bright_blue : "#7ED4E3"
+  foreground : dark_grey
+  primary : dark_blue
+
+  success: blue
+  warning: amber
+  danger: bright_red
+
+typography:
+    headings:
+      color: orange
+
+defaults:
+  bootstrap:
+    defaults:
+      # change callout look
+      callout-color-note: $brand-bright_blue
+      callout-color-tip: $brand-bright_green
+      callout-color-warning: $brand-bright_yellow
+      callout-color-important: $brand-bright_red
+      callout-color-caution: $brand-bright_orange
+
+      callout-border-width: 10px
+      callout-border-scale: 0%
+      callout-icon-scale: 15%
+      callout-margin-top: 2rem
+      callout-margin-bottom: 2rem
+
+    rules: |
+      div.callout {
+        background-color: $brand-blue;
+        border-radius: 10px;
+      }
+
+      div.callout-note {
+        background-color: rgb($brand-bright_blue, 0.25);
+
+        &.callout-style-default > .callout-header {
+          color: $brand-blue;
+        }
+      }
+
+      div.callout-tip {
+        background-color: rgb($brand-bright_green, 0.25);
+        
+        &.callout-style-default > .callout-header {
+          color: #358F90;
+        }
+      }
+
+      div.callout-warning {
+        background-color: rgb($brand-bright_yellow, 0.25);
+        
+        &.callout-style-default > .callout-header {
+          color: #F29F18;
+        }
+      }
+
+      div.callout-important {
+        background-color: rgb($brand-bright_red, 0.25);
+        
+        &.callout-style-default > .callout-header {
+          color: #BC0D0D;
+        }
+      }
+
+      div.callout-caution {
+        background-color: rgb($brand-bright_orange, 0.25);
+
+        &.callout-style-default > .callout-header {
+          color: $brand-orange;
+        }
+      }
+
+      blockquote, .blockquote {
+        background-color: rgb(#3AA6D1, 0.25);
+        border-left: 10px solid $brand-light_blue;
+        color: $brand-dark_grey;
+        padding: 1rem 1.25rem;
+        margin: 1.5rem 0;
+        border-radius: 0 10px 10px 0;
+      }

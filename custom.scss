@@ -1,0 +1,38 @@
+/*-- scss:defaults --*/
+$callout-color-note: $brand-bright_blue;
+$callout-color-tip: $brand-bright_green;
+$callout-color-warning: $brand-bright_yellow;
+$callout-color-important: $brand-bright_red;
+$callout-color-caution: $brand-bright_orange;
+
+$callout-border-width: 10px;
+$callout-border-scale: 0%;
+$callout-icon-scale: 15%;
+$callout-margin-top: 2rem;
+$callout-margin-bottom: 2rem;
+
+/*-- scss:rules --*/
+h1, .h1, .title {
+  color: $brand-orange;
+}
+
+h2, .h2 {
+  color: $brand-light_blue;
+}
+
+div.callout {
+  background-color: $brand-cream;
+}
+
+div.callout .callout-header {
+  color: $brand-dark_blue;
+}
+
+div.callout-caution.callout-style-default > .callout-header {
+  background-color: rgba($brand-orange, 0.2);
+  color: $brand-dark_blue;
+}
+
+div.callout-caution {
+  background-color: $brand-cream;
+}

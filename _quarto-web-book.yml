@@ -39,9 +39,9 @@ format:
     include-in-header:
       - dev/config.html # restricts hypothesis comments to QEB group
     # embed-resources: true
-    theme:
-      - cosmo
-      - brand
+    # theme:
+    #   - cosmo
+    #   - brand
   # pdf: default
   # docx: default
 

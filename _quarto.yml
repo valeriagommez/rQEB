@@ -17,5 +17,11 @@ bibliography:
   - references.bib
   - scope/references.bib
 
+format:
+  html:
+    theme:
+      - brand
+      - /custom.scss
+
 ## Look into managing code execution as project grows
 # https://quarto.org/docs/projects/code-execution.html
